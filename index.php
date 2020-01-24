@@ -20,5 +20,26 @@ $f3->route('GET /', function () {
     echo $view->render('views/home.html');
 });
 
+$f3->route('GET /@item', function ($f3, $param) {
+    $item = $param["item"];
+    switch($item){
+        case "chicken":
+            echo "<p>Cluck</p>";
+            break;
+        case "dog":
+            echo "<p>Woof</p>";
+            break;
+        case "pig":
+            echo "<p>Oink</p>";
+            break;
+        case "horse":
+            echo "<p>Neigh</p>";
+            break;
+        case "bird":
+            echo "<p>Chirp</p>";
+            break;
+    }
+});
+
 //run fat free
 $f3 -> run();
