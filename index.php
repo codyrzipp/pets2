@@ -38,6 +38,9 @@ $f3->route('GET /@item', function ($f3, $param) {
         case "bird":
             echo "<p>Chirp</p>";
             break;
+        default:
+            $f3->error(404);
+            break;
     }
 });
 
