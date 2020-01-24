@@ -20,6 +20,13 @@ $f3->route('GET /', function () {
     echo $view->render('views/home.html');
 });
 
+//define a default route
+$f3->route('POST /order2', function () {
+    $view = new Template();
+    echo $view->render('views/form2.html');
+});
+
+
 $f3->route('GET /@item', function ($f3, $param) {
     $item = $param["item"];
     switch($item){
