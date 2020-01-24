@@ -1,0 +1,16 @@
+{
+  "name": "IT328/pets2",
+  "authors": [
+    {
+      "name": "Cody Zipp",
+      "email": "Czipp2@mail.greenriver.edu"
+    },
+    {
+      "name": "Oleg Rovinskiy",
+      "email": "Orovinskiy@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
